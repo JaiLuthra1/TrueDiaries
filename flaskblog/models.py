@@ -13,7 +13,7 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(20), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
     bio = db.Column(
-        db.String(120), nullable=False, default="Hey there! I am using FlaskBlog."
+        db.String(120), nullable=False, default="Hey there! I am using TrueDiaries."
     )
     profile_picture = db.Column(db.String(20), nullable=False, default="default.jpg")
     password = db.Column(db.String(60), nullable=False)
